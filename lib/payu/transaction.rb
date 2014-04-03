@@ -69,7 +69,7 @@ module Payu
     def validate!
       invalid_attributes = []
 
-      [:pos_id, :pos_auth_key, :session_id, :desc, :first_name, :last_name, :email, :client_ip, :amount].each do |name|
+      [:pos_id, :pos_auth_key, :session_id, :desc, :email, :client_ip, :amount].each do |name|
         invalid_attributes << name if attribute_empty?(name)
       end
 
